@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brook Abayneh | Hacker Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --neon-green: #00FF00;
+            --neon-cyan: #00FFFF;
+        }
+        body {
+            font-family: 'Fira Code', monospace;
+        }
+        .text-glow-green {
+            text-shadow: 0 0 5px var(--neon-green), 0 0 10px var(--neon-green);
+        }
+        .hover-glow:hover {
+            box-shadow: 0 0 8px var(--neon-green), 0 0 12px var(--neon-cyan);
+            transition: all 0.3s ease-in-out;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-black text-white antialiased leading-relaxed">
+
+    <!-- Header -->
+    <header class="container mx-auto px-4 py-8 md:py-16 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold text-neon-green mb-2 text-glow-green">BROOK ABAYNEH</h1>
+        <p class="text-lg md:text-xl text-neon-cyan font-light mb-8">Low-Level Programmer / Hardware Enthusiast</p>
+        <nav class="flex justify-center space-x-4 md:space-x-8 text-sm md:text-base">
+            <a href="#about" class="text-white hover:text-neon-green hover-glow transition-all duration-300 rounded px-2 py-1">About</a>
+            <a href="#projects" class="text-white hover:text-neon-green hover-glow transition-all duration-300 rounded px-2 py-1">Projects</a>
+            <a href="#ideas" class="text-white hover:text-neon-green hover-glow transition-all duration-300 rounded px-2 py-1">Ideas</a>
+            <a href="#contact" class="text-white hover:text-neon-green hover-glow transition-all duration-300 rounded px-2 py-1">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+
+        <!-- About Section -->
+        <section id="about" class="py-12 fade-in">
+            <h2 class="text-2xl md:text-4xl font-bold text-neon-green text-glow-green mb-6 border-b-2 border-neon-cyan pb-2">About Me</h2>
+            <div class="space-y-4">
+                <p class="text-white leading-relaxed">
+                    Hello. I am a programmer with a passion for C, low-level systems, and hardware. My work focuses on building
+                    efficient and robust software from the ground up, with a deep understanding of the underlying architecture.
+                    I believe in writing clean, portable, and well-documented code that gets the job done without unnecessary
+                    abstraction. This website serves as a place to share my projects and ideas.
+                </p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-12 fade-in">
+            <h2 class="text-2xl md:text-4xl font-bold text-neon-green text-glow-green mb-6 border-b-2 border-neon-cyan pb-2">Projects</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <a href="https://github.com/my-project" target="_blank" rel="noopener noreferrer" class="block">
+                    <div class="bg-gray-900 rounded-md p-6 border border-transparent hover-glow transition-all duration-300">
+                        <h3 class="text-xl font-bold text-neon-green mb-2">Todo Program</h3>
+                        <p class="text-white/80 mb-4 text-sm">
+                            This is simple Todo list program in C.
+                        </p>
+                        <span class="text-neon-cyan font-semibold hover:underline text-sm">github.com/my-project</span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/my-project" target="_blank" rel="noopener noreferrer" class="block">
+                    <div class="bg-gray-900 rounded-md p-6 border border-transparent hover-glow transition-all duration-300">
+                        <h3 class="text-xl font-bold text-neon-green mb-2">Bank System</h3>
+                        <p class="text-white/80 mb-4 text-sm">
+                            I build simple Banking system with good CML interface in C.
+                        </p>
+                        <span class="text-neon-cyan font-semibold hover:underline text-sm">github.com/my-project</span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/my-project" target="_blank" rel="noopener noreferrer" class="block">
+                    <div class="bg-gray-900 rounded-md p-6 border border-transparent hover-glow transition-all duration-300">
+                        <h3 class="text-xl font-bold text-neon-green mb-2">Grade Program</h3>
+                        <p class="text-white/80 mb-4 text-sm">
+                            Average calculeting program in C.
+                        </p>
+                        <span class="text-neon-cyan font-semibold hover:underline text-sm">github.com/my-project</span>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Ideas Section -->
+        <section id="ideas" class="py-12 fade-in">
+            <h2 class="text-2xl md:text-4xl font-bold text-neon-green text-glow-green mb-6 border-b-2 border-neon-cyan pb-2">Ideas & Thoughts</h2>
+            <div class="space-y-6">
+                <div class="p-4 bg-gray-900 rounded-md border border-transparent hover-glow transition-all duration-300">
+                    <p class="mb-2 text-sm text-white/50">14 Sep 2024</p>
+                    <h3 class="text-xl font-bold text-neon-green mb-2">Build Code editor in C</h3>
+                    <p class="text-white/80">
+                        I start building simple fast code editor in C, I will shere it soon.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-12 fade-in">
+            <h2 class="text-2xl md:text-4xl font-bold text-neon-green text-glow-green mb-6 border-b-2 border-neon-cyan pb-2">Contact</h2>
+            <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-lg md:text-xl">
+                <a href="https://github.com/Brook21M" target="_blank" rel="noopener noreferrer" class="text-white hover:text-neon-cyan hover-glow transition-all duration-300 rounded px-2 py-1">GitHub</a>
+                <a href="mailto:brookeldu25@gmail.com" class="text-white hover:text-neon-cyan hover-glow transition-all duration-300 rounded px-2 py-1">Email</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="container mx-auto px-4 py-8 text-center text-sm text-white/50">
+        <p>Coded with <span class="text-red-500">♥</span> and a text editor.</p>
+        <p class="text-sm mt-1">&copy; 2024 Brook Abayneh. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JS for smooth scrolling and fade-in -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+
+</body>
+</html>
+
